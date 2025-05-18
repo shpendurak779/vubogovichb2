@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <title>Обо мне</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(45deg, #FFF3E0, #FFE0B2);
+        color: #2E2E2E;
+        line-height: 1.6;
+      }
+        header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+  }
+
+  .link-header {
+    text-decoration: none;
+    color: #FF8A65;
+    margin-right: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .link-header:hover {
+    background: #FF8A65;
+    color: white;
+    box-shadow: none;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #FF7043;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+  }
+
+  ul li {
+    background: #FFAB91;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+  }
+
+  ul li:hover {
+    transform: translateY(-3px);
+  }
+
+  img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #FF7043;
+    margin-top: 50px;
+  }
+
+  .social img {
+    width: 60px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+
+  .social:hover img {
+    transform: rotate(15deg);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <a class="link-header"
+    href="index.html">Главная</a>
+    <a class="link-header"
+    href="projects.html">Проекты</a>
+    </header>
+    <main>
+      <h1>Убогович Владимир</h1>
+      <p>Я люблю программировать и создавать интересные проекты. В свободное время играю с братом в Terraria и слушаю любимую музыку.</p>
+        <ul>
+    <li>🎮 Гейминг</li>
+    <li>🎵 Музыка Makana</li>
+    <li>💻 Веб-разработка</li>
+  </ul>
+
+  <div class="image-grid">
+    <img src="https://ir.ozone.ru/s3/multimedia-n/w500/6580661135.jpg" alt="Рабочее пространство"/>
+    <img src="https://248006.selcdn.ru/main/iblock/8c2/8c2e5c43eecb388692b833642b95248c/0b42cf3415d53b6ebd94fd611d8c73dd.jpg" alt="Проекты"/>
+  </div>
+</main>
+<footer>
+  <a class="social" href="#">
+    <img src="https://learn.algoritmika.org/uploads/2021/04/Group%201_0_1618254571.png" alt="Соцсети"/>
+  </a>
+</footer>
+</body>
+</html>
