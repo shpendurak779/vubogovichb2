@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title>Мои проекты</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(45deg, #FFF3E0, #FFE0B2);
+        color: #2E2E2E;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+      }
+
+      .link-header {
+        text-decoration: none;
+        color: #FF8A65;
+        margin-right: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      .link-header:hover {
+        background: #FF8A65;
+        color: white;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #FF7043;
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+      }
+
+      .project-list {
+        display: grid;
+        gap: 25px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      }
+
+      .link-text {
+        color: #FF7043;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .link-text:hover {
+        background: #FFEEEE;
+        transform: translateX(10px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #FF7043;
+        margin-top: 50px;
+      }
+
+      .social img {
+        width: 60px;
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s ease;
+        margin: 0 15px;
+      }
+
+      .social:hover img {
+        transform: rotate(15deg);
+      }
+
+      .container {
+        display: flex;
+        gap: 40px;
+        margin: 50px 0;
+        align-items: center;
+      }
+
+      .advice, .instruments {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 15px;
+        flex: 1;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      }
+
+      ol, .instruments p {
+        font-size: 1.1em;
+        line-height: 1.8;
+      }
+
+      img {
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="link-header" href="index.html">Главная</a>
+      <a class="link-header" href="projects.html">Проекты</a>
+    </header>
+    <main>
+      <h1>Мои проекты</h1>
+      <div class="project-list">
+        <p><a class="link-text" href="http://project10736155.tilda.ws/"><b>Сайт</b></a> о космических ракетах с видео-обложкой (сделан в Tilda)</p>
+        <p><a class="link-text" href="https://shpendurak779.github.io/vubogovichb2/site1.html"><b>Сайт</b></a> экзотического зоопарка - мой первый HTML/CSS проект</p>
+        <p><a class="link-text" href="https://shpendurak779.github.io/vubogovichb2/site2.html"><b>Сайт</b></a> магазина фейерверков с кастомными CSS-стилями</p>
+        <p><a class="link-text" href="https://shpendurak779.github.io/vubogovichb2/site3.html"><b>Сайт</b></a> зоомагазина с использованием flex-контейнеров</p>
+      </div>
+
+      <section class="container">
+        <div class="advice">
+          <h2>Советы новичкам</h2>
+          <ol>
+            <li>Используй шапку, подвал, основной заголовок</li>
+            <li>Добавляй отступы</li>
+            <li>Подбирай цвета по цветовому кругу</li>
+            <li>Соблюдай симметрию</li>
+            <li>Пиши код понятно</li>
+            <li>Выделяй интерактивные элементы</li>
+          </ol>
+        </div>
+        <img src="https://mars.algoritmika.org/uploads/2021/04/highlight-27841_0_1618337210.svg" width="600" height="400" alt="Советы">
+      </section>
+
+      <section class="container">
+        <div class="instruments">
+          <h2>Инструменты</h2>
+          <p>Онлайн-конструктор <a class="link-text" href="https://tilda.cc/ru/"><b>Tilda</b></a></p>
+          <p>Веб-сервис для публикации кода <a class="link-text" href="https://github.com/"><b>GitHub</b></a></p>
+          <p>Бесплатный сток картинок <a class="link-text" href="https://pixabay.com/"><b>Pixabay</b></a></p>
+          <p>Цветовой круг <a class="link-text" href="https://colorscheme.ru/"><b>Colorscheme</b></a></p>
+        </div>
+        <img src="https://mars.algoritmika.org/uploads/2021/04/flat-2126879_0_1618337210.svg" width="600" height="400" alt="Инструменты">
+      </section>
+    </main>
+    <footer>
+      <a class="social" href="#"><img src="https://learn.algoritmika.org/uploads/2021/04/Group%201_0_1618254571.png" alt="Соцсети"></a>
+    </footer>
+  </body>
+</html>
